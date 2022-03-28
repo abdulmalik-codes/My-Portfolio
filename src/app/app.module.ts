@@ -10,9 +10,10 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, DropdownDirective, HomeComponent, AboutComponent, ProjectsComponent, TestimonialsComponent, ContactComponent],
+  declarations: [AppComponent, NavbarComponent, DropdownDirective, HomeComponent, AboutComponent, ProjectsComponent, TestimonialsComponent, ContactComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

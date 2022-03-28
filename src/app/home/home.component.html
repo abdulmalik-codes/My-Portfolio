@@ -1,1 +1,17 @@
-<p>home works!</p>
+<body>
+  <div class="home-background">
+    <h1>
+      {{ greetings }}! I'm
+      <span *ngFor="let name of names"> {{ name }}... </span>
+    </h1>
+
+    <p>
+      I'm
+      <span *ngFor="let message of messages">
+        {{ message }}
+      </span>
+    </p>
+
+    <button routerLink="/about">Welcome</button>
+  </div>
+</body>

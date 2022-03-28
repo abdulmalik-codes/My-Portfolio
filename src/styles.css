@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+  font-size: 80px;
+  /* color: #1d3557; */
+}
+h1 span {
+  /* color: #a8dadc; */
+  text-shadow: 0 8px 32px 0 #1d3557;
+}
