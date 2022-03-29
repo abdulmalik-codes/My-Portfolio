@@ -2,13 +2,15 @@
   <div class="home-background">
     <h1>
       {{ greetings }}! I'm
-      <span *ngFor="let name of names"> {{ name }}... </span>
+      <span>
+        <ngtypewriter [StringList]="names" [speed]="20000"></ngtypewriter>
+      </span>
     </h1>
 
     <p>
       I'm
-      <span *ngFor="let message of messages">
-        {{ message }}
+      <span>
+        <ngtypewriter [StringList]="messages" [speed]="1000"></ngtypewriter>
       </span>
     </p>
 

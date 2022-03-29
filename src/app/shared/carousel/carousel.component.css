@@ -1,0 +1,12 @@
+.carousel-control-next {
+  background-color: black;
+}
+
+.carousel-control-prev {
+  background-color: black;
+}
+
+span .carousel-control-next-icon {
+  color: black;
+  background-color: brown;
+}

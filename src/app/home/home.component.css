@@ -1,12 +1,15 @@
 body {
   top: 0;
-  background-image: url("src\assets\home\me-home.jpg");
+  background-image: url("src\assets\home\me-home.jpg"),
+    radial-gradient(#a8dadc, #1d3557);
+  background-blend-mode: darken;
 
   height: 100vh;
 
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
+  /* width: 100%; */
 }
 
 .home-background {

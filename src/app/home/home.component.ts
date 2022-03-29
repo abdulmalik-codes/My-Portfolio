@@ -16,8 +16,8 @@ export class HomeComponent implements OnInit {
   ];
   messages: string[] = [
     'an Aspiring Angular Developer.',
-    // "based in Mitchell's Plain, Cape Town.",
-    // 'Excited to meet YOU!',
+    "based in Mitchell's Plain, Cape Town.",
+    'Excited to meet YOU!',
   ];
 
   constructor() {}

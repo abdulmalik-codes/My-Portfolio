@@ -1,81 +1,89 @@
-<div class="about-me">
-  <h1 class="about-heading">
-    About <span class="about-heading-split">Me</span>
-  </h1>
-  <div class="about-content">
-    <div class="my-details-container">
-      <img
-        class="my-pic"
-        src="../../assets/home/me-home.jpg"
-        alt="My Picture"
-      />
-      <!-- src="../../assets/about/me-about.jpg" -->
-      <div class="my-details">
-        <div>
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-phone-alt"></i>
-            </span>
-            076 497 1338
-          </p>
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </span>
-            Mitchell's Plain, Cape Town
-          </p>
+<div class="container">
+  <h1 style="text-align: center">About <span>Me</span></h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="width: 100%">
+        <img
+          src="../../assets/about/me-about.jpg"
+          class="card-img-top img-responsive"
+          alt="..."
+          style="height: 500px"
+        />
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-7">
+              <p>
+                <span>
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                076 497 1338
+              </p>
+              <p>
+                <span class="about-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </span>
+                Mitchell's Plain, Cape Town
+              </p>
 
-          <p class="details">
-            <span class="about-icon">
-              <i class="far fa-envelope"></i>
-            </span>
-            abdulmalikmohamed360@gmail.com
-          </p>
+              <p>
+                <span class="about-icon">
+                  <i class="far fa-envelope"></i>
+                </span>
+                abdul.malik.codes@gmail.com
+              </p>
 
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-cog gear"></i>
-            </span>
-            Aspiring Full Stack Developer
-          </p>
-        </div>
-        <div>
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-birthday-cake"> </i>
-            </span>
-            3 February 2000
-          </p>
-          <p class="details">
-            <span class="about-icon">
-              <i class="far fa-comments"></i>
-            </span>
-            English/Afrikaans
-          </p>
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-id-card"></i>
-            </span>
-            License <i class="fas fa-check"></i>
-          </p>
-          <p class="details">
-            <span class="about-icon">
-              <i class="fas fa-syringe"></i>
-            </span>
-            Vaccinated <i class="fas fa-check"></i>
-          </p>
+              <p>
+                <span class="about-icon">
+                  <i class="fas fa-cog gear"></i>
+                </span>
+                Aspiring Angular Developer
+              </p>
+            </div>
+            <div class="col-sm-5">
+              <p>
+                <span class="about-icon">
+                  <i class="fas fa-birthday-cake"> </i>
+                </span>
+                3 February 2000
+              </p>
+              <p>
+                <span class="about-icon">
+                  <i class="far fa-comments"></i>
+                </span>
+                English/Afrikaans
+              </p>
+              <p>
+                <span class="about-icon">
+                  <i class="fas fa-id-card"></i>
+                </span>
+                License <i class="fas fa-check"></i>
+              </p>
+              <p>
+                <span class="about-icon">
+                  <i class="fas fa-syringe"></i>
+                </span>
+                Vaccinated <i class="fas fa-check"></i>
+              </p>
+            </div>
+          </div>
+
+          <a
+            href=""
+            download="CV of Abdul-Malik Mohamed"
+            class="btn btn-primary"
+          >
+            <i class="far fa-arrow-alt-circle-down"></i> Download My CV</a
+          >
         </div>
       </div>
-      <a class="download-btn" href="" download="CV of Abdul-Malik Mohamed">
-        <i class="far fa-arrow-alt-circle-down"></i>
-        Download My CV</a
-      >
     </div>
-    <div class="my-bio-container">
-      <p class="typing-container">
-        <span class="bio-text"></span>
-        <span class="cursor typing">&nbsp;</span>
+    <div class="col-sm-6">
+      <p>
+        <ngtypewriter [StringList]="passion" [speed]="50000"></ngtypewriter>
       </p>
+      <p></p>
     </div>
   </div>
+
+  <portfolio-carousel></portfolio-carousel>
 </div>

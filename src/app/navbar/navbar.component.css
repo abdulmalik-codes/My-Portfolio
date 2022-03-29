@@ -1,14 +1,10 @@
 .navbar-links {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 
   position: fixed;
-  top: 40px;
-  right: 50px;
-  /* width: 100%; */
-  /* height: 0; */
+  top: 30px;
+  right: 30px;
 
   list-style-type: none;
 
@@ -20,19 +16,7 @@
   transition: all 0.6s linear;
   z-index: 1;
 
-  /* height: 40%; */
-
-  background-color: aqua;
-}
-
-.navbar-link {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-
-  font-size: 15px;
-  transition: 0.6s;
-  padding: 1px 1px;
+  /* background-color: aqua; */
 }
 
 .nav-tooltip {
@@ -40,7 +24,6 @@
 }
 .nav-tooltip-text {
   visibility: hidden;
-  /* width: 150px; */
   text-align: center;
   border-radius: 6px;
   padding: 5px;
@@ -55,7 +38,4 @@
 .nav-tooltip:hover .nav-tooltip-text {
   visibility: visible;
   transition: 0.3s;
-}
-
-.navbar-button {
 }
