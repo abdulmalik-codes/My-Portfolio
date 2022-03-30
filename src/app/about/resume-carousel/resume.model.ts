@@ -1,7 +1,7 @@
 export class Resume {
   constructor(
     public title: string,
-    public year: string,
+    public year: any,
     public location: string,
     public description: string
   ) {

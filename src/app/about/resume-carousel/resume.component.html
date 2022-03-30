@@ -1,0 +1,78 @@
+<div class="container">
+  <div style="text-align: center">
+    <h2>My Resume</h2>
+    <div>
+      <button (click)="onEducation()">Education</button>
+      <button (click)="onWork()">work</button>
+      <button (click)="onExperience()">experience</button>
+    </div>
+  </div>
+
+  <ngb-carousel *ngIf="educationSelected">
+    <ng-template
+      style="background-color: black; height: 500px"
+      ngbSlide
+      *ngFor="let education of educationExperience"
+    >
+      <div style="height: 300px; border: 2px solid black">
+        <div class="carousel-caption" style="color: black">
+          <h3>
+            {{ education.title }}
+          </h3>
+          <p>
+            {{ education.year }}
+          </p>
+          <p>
+            {{ education.location }}
+          </p>
+          <p>
+            {{ education.description }}
+          </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <ngb-carousel *ngIf="workSelected">
+    <ng-template ngbSlide *ngFor="let work of workExperience">
+      <div style="height: 300px; border: 2px solid black">
+        <div class="carousel-caption" style="color: black">
+          <h3>
+            {{ work.title }}
+          </h3>
+          <p>
+            {{ work.year }}
+          </p>
+          <p>
+            {{ work.location }}
+          </p>
+          <p>
+            {{ work.description }}
+          </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <ngb-carousel *ngIf="experienceSelected">
+    <h1>work</h1>
+    <ng-template ngbSlide *ngFor="let development of developmentExperience">
+      <div style="height: 300px; border: 2px solid black">
+        <div class="carousel-caption" style="color: black">
+          <h3>
+            {{ development.title }}
+          </h3>
+          <p>
+            {{ development.year }}
+          </p>
+          <p>
+            {{ development.location }}
+          </p>
+          <p>
+            {{ development.description }}
+          </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

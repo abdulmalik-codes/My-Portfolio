@@ -23,4 +23,10 @@ export class AboutComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  onDownloadCv() {
+    alert(
+      `CV under construction, send me an email to abdul.malik.codes@gmail.com to get an old copy`
+    );
+  }
 }

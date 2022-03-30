@@ -1,1 +1,79 @@
-<p>projects works!</p>
+<h1>My <span> Projects </span></h1>
+
+<div class="buttons" style="text-align: center">
+  <button class="btn">All</button>
+  <button class="btn" (click)="showHtmlCss()">HTML/CSS</button>
+  <button class="btn" (click)="showPython()">PYTHON</button>
+  <button class="btn" (click)="showJS()">JS</button>
+  <button class="btn">Angular</button>
+</div>
+
+<div class="container">
+  <div class="card-columns">
+    <div class="card" *ngFor="let project of projects" (click)="show()">
+      <img
+        class="card-img-top"
+        [id]="project.id"
+        [src]="project.imgURL"
+        [alt]="project.imgALT"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Creates the bootstrap modal where the image will appear -->
+<div *ngFor="let project of projects">
+  <div
+    [style.display]="showModal ? 'block' : 'none'"
+    class="modal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="project.id"
+    aria-hidden="true"
+    [id]="project.id"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" [id]="project.id">
+            {{ project.title }}
+          </h4>
+        </div>
+        <div class="modal-body">
+          <img
+            [src]="project.imgURL"
+            [alt]="project.imgALT"
+            [id]="project.id"
+            style="width: 425px; height: 425px"
+          />
+        </div>
+
+        <h4>
+          {{ project.techStack }}
+        </h4>
+
+        <p>
+          {{ project.description }}
+        </p>
+
+        <div class="buttons">
+          <a href="{{ project.githubURL }}" target="_blank"> git </a>
+          <a href="{{ project.liveProjectURL }}" target="_blank"> live </a>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            (click)="hide()"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<portfolio-footer></portfolio-footer>

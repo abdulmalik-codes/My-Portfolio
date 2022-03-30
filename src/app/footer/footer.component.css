@@ -6,9 +6,8 @@ footer {
   align-items: center;
   justify-content: space-around;
   z-index: 50;
-  position: fixed;
-  bottom: 0;
-  height: 10%;
+
+  height: 10vh;
   /* padding: 20px; */
 
   font-size: 15px;

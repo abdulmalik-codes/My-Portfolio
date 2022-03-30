@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 style="text-align: center">About <span>Me</span></h1>
+  <h1>About <span>Me</span></h1>
   <div class="row">
     <div class="col-sm-6">
       <div class="card" style="width: 100%">
@@ -67,11 +67,11 @@
             </div>
           </div>
 
-          <a
-            href=""
-            download="CV of Abdul-Malik Mohamed"
-            class="btn btn-primary"
-          >
+          <!--
+          href=""
+          download="CV of Abdul-Malik Mohamed"
+          -->
+          <a class="btn btn-primary" (click)="onDownloadCv()">
             <i class="far fa-arrow-alt-circle-down"></i> Download My CV</a
           >
         </div>
@@ -85,5 +85,23 @@
     </div>
   </div>
 
-  <portfolio-carousel></portfolio-carousel>
+  <portfolio-resume></portfolio-resume>
+
+  <div class="container">
+    <h2 style="text-align: center">My Skills</h2>
+
+    <div class="container">
+      <i class="icon fab fa-html5"> HTML </i>
+      <i class="icon fab fa-css3-alt"> CSS </i>
+      <i class="icon fab fa-js-square"> JavaScript </i>
+      <i class="icon fab fa-python"> Python </i>
+      <i class="icon devicon-mysql-plain"> MySQL </i>
+      <i class="icon devicon-sqlite-plain"> SQLite </i>
+      <i class="icon devicon-flask-original"> Flask </i>
+      <i class="icon devicon-vuejs-plain"> Vue.js </i>
+      <i class="icon devicon-angularjs-plain"> Angular </i>
+    </div>
+  </div>
 </div>
+
+<portfolio-footer></portfolio-footer>

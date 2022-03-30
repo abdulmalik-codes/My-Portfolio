@@ -1,1 +1,31 @@
-<p>testimonials works!</p>
+<hr />
+<hr />
+<hr />
+
+<div class="container">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let testimonial of testimonials">
+      <div style="height: 500px; border: 2px solid black">
+        <div class="carousel-caption" style="color: black">
+          <img
+            class="img-responsive"
+            [src]="testimonial.img"
+            [alt]="testimonial.imgAlt"
+          />
+
+          <p>
+            {{ testimonial.name }}
+          </p>
+          <p>
+            {{ testimonial.title }}
+          </p>
+
+          <p>
+            {{ testimonial.message }}
+          </p>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<portfolio-footer></portfolio-footer>

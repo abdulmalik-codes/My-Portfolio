@@ -5,9 +5,10 @@
 h1 {
   font-size: 80px;
   /* color: #1d3557; */
+  text-align: center;
 }
 h1 span {
-  /* color: #a8dadc; */
+  /* color: #a8dadc;        */
   text-shadow: 0 8px 32px 0 #1d3557;
 }
 
