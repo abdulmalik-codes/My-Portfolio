@@ -6,4 +6,4 @@ My first attempt at an angular project. I'm converting my basic html, css and js
 
 Link to my old Portfolio: https://abdul-malik-portfolio.netlify.app/
 
-Link to my new Portfolio: coming soon...
+Link to my new Portfolio: https://abdulmalikcodes.netlify.app/home
