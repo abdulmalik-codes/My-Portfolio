@@ -1,9 +1,9 @@
 <body>
   <div class="home-background">
     <h1>
-      {{ greetings }}! I'm
+      {{ greetings }}!
       <span>
-        <ngtypewriter [StringList]="names" [speed]="20000"></ngtypewriter>
+        <ngtypewriter [StringList]="names" [speed]="200000"></ngtypewriter>
       </span>
     </h1>
 
@@ -14,7 +14,7 @@
       </span>
     </p>
 
-    <button routerLink="/about">Welcome</button>
+    <button class="welcome-btn" routerLink="/about">Welcome</button>
   </div>
 </body>
 

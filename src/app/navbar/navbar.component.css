@@ -15,27 +15,13 @@
 
   transition: all 0.6s linear;
   z-index: 1;
-
-  /* background-color: aqua; */
 }
 
-.nav-tooltip {
-  position: relative;
-}
-.nav-tooltip-text {
-  visibility: hidden;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  font-size: 16px;
-
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  right: 105%;
-  margin-right: 20px;
-}
-.nav-tooltip:hover .nav-tooltip-text {
-  visibility: visible;
+.fas {
+  color: #03045e;
   transition: 0.3s;
+}
+
+.fas:hover {
+  color: #48cae4;
 }

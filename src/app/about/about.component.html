@@ -1,107 +1,118 @@
-<div class="container">
-  <h1>About <span>Me</span></h1>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="card" style="width: 100%">
-        <img
-          src="../../assets/about/me-about.jpg"
-          class="card-img-top img-responsive"
-          alt="..."
-          style="height: 500px"
-        />
-        <div class="card-body">
-          <div class="row">
-            <div class="col-sm-7">
-              <p>
-                <span>
-                  <i class="fas fa-phone-alt"></i>
-                </span>
-                076 497 1338
-              </p>
-              <p>
-                <span class="about-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </span>
-                Mitchell's Plain, Cape Town
-              </p>
+<body>
+  <div class="container">
+    <h1>About <span>Me</span></h1>
 
-              <p>
-                <span class="about-icon">
-                  <i class="far fa-envelope"></i>
-                </span>
-                abdul.malik.codes@gmail.com
-              </p>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card" style="width: 100%">
+          <img
+            src="../../assets/about/me-about.jpg"
+            class="card-img-top img-responsive"
+            alt="..."
+            style="height: 500px; border-radius: 10px"
+          />
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  076 497 1338
+                </p>
+                <p>
+                  <span>
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  Mitchell's Plain, Cape Town
+                </p>
 
-              <p>
-                <span class="about-icon">
-                  <i class="fas fa-cog gear"></i>
-                </span>
-                Aspiring Angular Developer
-              </p>
+                <p>
+                  <span>
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  abdul.malik.codes@gmail.com
+                </p>
+
+                <p>
+                  <span>
+                    <i class="fas fa-cog gear"></i>
+                  </span>
+                  Aspiring Angular Developer
+                </p>
+              </div>
+              <div class="col">
+                <p>
+                  <span>
+                    <i class="fas fa-birthday-cake"> </i>
+                  </span>
+                  3 February 2000
+                </p>
+                <p>
+                  <span>
+                    <i class="far fa-comments"></i>
+                  </span>
+                  English/Afrikaans
+                </p>
+                <p>
+                  <span>
+                    <i class="fas fa-id-card"></i>
+                  </span>
+                  License <i class="fas fa-check"></i>
+                </p>
+                <p>
+                  <span>
+                    <i class="fas fa-syringe"></i>
+                  </span>
+                  Vaccinated <i class="fas fa-check"></i>
+                </p>
+              </div>
             </div>
-            <div class="col-sm-5">
-              <p>
-                <span class="about-icon">
-                  <i class="fas fa-birthday-cake"> </i>
-                </span>
-                3 February 2000
-              </p>
-              <p>
-                <span class="about-icon">
-                  <i class="far fa-comments"></i>
-                </span>
-                English/Afrikaans
-              </p>
-              <p>
-                <span class="about-icon">
-                  <i class="fas fa-id-card"></i>
-                </span>
-                License <i class="fas fa-check"></i>
-              </p>
-              <p>
-                <span class="about-icon">
-                  <i class="fas fa-syringe"></i>
-                </span>
-                Vaccinated <i class="fas fa-check"></i>
-              </p>
-            </div>
+
+            <!--
+            href=""
+            download="CV of Abdul-Malik Mohamed"
+            -->
+            <a (click)="onDownloadCv()">
+              <i class="far fa-arrow-alt-circle-down"></i> Download My CV</a
+            >
           </div>
-
-          <!--
-          href=""
-          download="CV of Abdul-Malik Mohamed"
-          -->
-          <a class="btn btn-primary" (click)="onDownloadCv()">
-            <i class="far fa-arrow-alt-circle-down"></i> Download My CV</a
-          >
         </div>
       </div>
+      <div class="col-sm-6">
+        <p>
+          <ngtypewriter [StringList]="passion" [speed]="50000"></ngtypewriter>
+        </p>
+        <p></p>
+      </div>
     </div>
-    <div class="col-sm-6">
-      <p>
-        <ngtypewriter [StringList]="passion" [speed]="50000"></ngtypewriter>
-      </p>
-      <p></p>
-    </div>
-  </div>
 
-  <portfolio-resume></portfolio-resume>
-
-  <div class="container">
-    <h2 style="text-align: center">My Skills</h2>
+    <portfolio-resume></portfolio-resume>
 
     <div class="container">
-      <i class="icon fab fa-html5"> HTML </i>
-      <i class="icon fab fa-css3-alt"> CSS </i>
-      <i class="icon fab fa-js-square"> JavaScript </i>
-      <i class="icon fab fa-python"> Python </i>
-      <i class="icon devicon-mysql-plain"> MySQL </i>
-      <i class="icon devicon-sqlite-plain"> SQLite </i>
-      <i class="icon devicon-flask-original"> Flask </i>
-      <i class="icon devicon-vuejs-plain"> Vue.js </i>
-      <i class="icon devicon-angularjs-plain"> Angular </i>
+      <h2>My <span> Skills </span></h2>
+
+      <div class="container">
+        <i class="icon fab fa-html5"> HTML </i>
+        <i class="icon fab fa-css3-alt"> CSS </i>
+        <i class="icon fab fa-js-square"> JavaScript </i>
+        <i class="icon fab fa-python"> Python </i>
+        <i class="icon devicon-mysql-plain"> MySQL </i>
+        <i class="icon devicon-sqlite-plain"> SQLite </i>
+        <i class="icon devicon-flask-original"> Flask </i>
+        <i class="icon devicon-vuejs-plain"> Vue.js </i>
+        <i class="icon devicon-angularjs-plain"> Angular </i>
+      </div>
     </div>
   </div>
-</div>
 
-<portfolio-footer></portfolio-footer>
+  <portfolio-footer></portfolio-footer>
+</body>
+
+<div class="container" *ngIf="false">
+  <div *ngFor="let skill of skills">
+    <p>
+      {{ skill }}
+    </p>
+  </div>
+</div>

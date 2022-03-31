@@ -2,41 +2,43 @@
   <ul class="navbar-links">
     <li routerLinkActive="active">
       <a routerLink="/home">
-        <i class="fas fa-home nav-tooltip">
-          <span class="nav-tooltip-text">HOME</span>
-        </i>
+        <i class="fas fa-home" placement="start" ngbTooltip="Home"> </i>
       </a>
     </li>
     <li routerLinkActive="active">
       <a routerLink="/about">
-        <i class="fas fa-address-card nav-tooltip">
-          <span class="nav-tooltip-text">ABOUT</span>
+        <i class="fas fa-address-card" placement="start" ngbTooltip="About">
         </i>
       </a>
     </li>
     <li routerLinkActive="active">
       <a routerLink="/projects">
-        <i class="fas fa-briefcase nav-tooltip">
-          <span class="nav-tooltip-text">PORTFOLIO</span>
+        <i class="fas fa-briefcase" placement="start" ngbTooltip="Portfolio">
         </i>
       </a>
     </li>
     <li routerLinkActive="active">
       <a routerLink="/testimonials">
-        <i class="fas fa-quote-left nav-tooltip">
-          <span class="nav-tooltip-text">TESTIMONIALS</span>
+        <i
+          class="fas fa-quote-left"
+          placement="start"
+          ngbTooltip="Testimonials"
+        >
         </i>
       </a>
     </li>
+
     <li routerLinkActive="active">
       <a routerLink="/contact-me">
-        <i class="fas fa-envelope nav-tooltip">
-          <span class="nav-tooltip-text">CONTACT ME</span>
-        </i>
+        <i class="fas fa-envelope" placement="start" ngbTooltip="Contact"> </i>
       </a>
     </li>
   </ul>
 </nav>
+
+<!-- <button type="button" placement="start" ngbTooltip="Tooltip on left">
+  Tooltip on left
+</button> -->
 
 <!--
 <ul class="nav navbar-nav navbar-right">

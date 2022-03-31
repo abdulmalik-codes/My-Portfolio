@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { skills } from './skills.service';
 
 @Component({
   selector: 'portfolio-about',
@@ -20,9 +21,13 @@ export class AboutComponent implements OnInit {
       This curiosity lead me to where I am today.`,
   ];
 
-  constructor() {}
+  constructor(private skillService: skills) {}
 
-  ngOnInit(): void {}
+  skills: string[] = [];
+
+  ngOnInit(): void {
+    this.skills = this.skillService.getSkills();
+  }
 
   onDownloadCv() {
     alert(

@@ -1,15 +1,12 @@
 body {
-  top: 0;
   background-image: url("src\assets\home\me-home.jpg"),
-    radial-gradient(#a8dadc, #1d3557);
+    radial-gradient(#caf0f8, #ade8f4);
   background-blend-mode: darken;
 
   height: 100vh;
 
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
 }
 
 .home-background {
@@ -19,4 +16,21 @@ body {
   justify-content: center;
   height: 100%;
   text-align: center;
+}
+
+p {
+  color: #03045e;
+}
+p span {
+  color: #00b4d8;
+}
+
+.welcome-btn {
+  border-radius: 10px;
+  border: #03045e 2px solid;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.welcome-btn:hover {
+  background-color: #00b4d8;
 }

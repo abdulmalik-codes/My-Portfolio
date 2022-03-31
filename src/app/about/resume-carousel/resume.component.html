@@ -1,31 +1,59 @@
 <div class="container">
-  <div style="text-align: center">
-    <h2>My Resume</h2>
-    <div>
-      <button (click)="onEducation()">Education</button>
-      <button (click)="onWork()">work</button>
-      <button (click)="onExperience()">experience</button>
+  <div>
+    <h2>My <span> Resume </span></h2>
+    <div style="text-align: center">
+      <button
+        class="btn resume-btn"
+        (click)="onEducation()"
+        placement="bottom"
+        ngbTooltip="Education"
+      >
+        <i class="fa-solid fa-graduation-cap"></i>
+      </button>
+      <button
+        class="btn resume-btn"
+        (click)="onWork()"
+        placement="bottom"
+        ngbTooltip="Work"
+      >
+        <i class="fa-solid fa-briefcase"></i>
+      </button>
+      <button
+        class="btn resume-btn"
+        (click)="onExperience()"
+        placement="bottom"
+        ngbTooltip="Development"
+      >
+        <i class="fa-solid fa-award"></i>
+      </button>
     </div>
   </div>
 
-  <ngb-carousel *ngIf="educationSelected">
-    <ng-template
-      style="background-color: black; height: 500px"
-      ngbSlide
-      *ngFor="let education of educationExperience"
-    >
-      <div style="height: 300px; border: 2px solid black">
-        <div class="carousel-caption" style="color: black">
-          <h3>
-            {{ education.title }}
-          </h3>
-          <p>
-            {{ education.year }}
-          </p>
-          <p>
-            {{ education.location }}
-          </p>
-          <p>
+  <ngb-carousel [wrap]="false" [interval]="11000" *ngIf="educationSelected">
+    <ng-template ngbSlide *ngFor="let education of educationExperience">
+      <div
+        style="height: 50vh; border: 2px solid black; text-align: center"
+        class="container"
+      >
+        <div class="row">
+          <div class="col">
+            <h3>
+              {{ education.title }}
+            </h3>
+            <p>
+              <i class="fas fa-school"></i>
+              {{ education.location }}
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <i class="far fa-calendar-alt"></i>
+              {{ education.year }}
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <p style="text-align: center">
             {{ education.description }}
           </p>
         </div>
@@ -33,45 +61,62 @@
     </ng-template>
   </ngb-carousel>
 
-  <ngb-carousel *ngIf="workSelected">
+  <ngb-carousel [wrap]="false" [interval]="11000" *ngIf="workSelected">
     <ng-template ngbSlide *ngFor="let work of workExperience">
-      <div style="height: 300px; border: 2px solid black">
-        <div class="carousel-caption" style="color: black">
-          <h3>
-            {{ work.title }}
-          </h3>
-          <p>
-            {{ work.year }}
-          </p>
-          <p>
-            {{ work.location }}
-          </p>
-          <p>
-            {{ work.description }}
-          </p>
+      <div
+        style="height: 50vh; border: 2px solid black; text-align: center"
+        class="container"
+      >
+        <div class="row">
+          <div class="col">
+            <h3>
+              {{ work.title }}
+            </h3>
+            <p>
+              <i class="fas fa-school"></i>
+              {{ work.location }}
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <i class="far fa-calendar-alt"></i>
+              {{ work.year }}
+            </p>
+          </div>
         </div>
+        <p>
+          {{ work.description }}
+        </p>
       </div>
     </ng-template>
   </ngb-carousel>
 
-  <ngb-carousel *ngIf="experienceSelected">
-    <h1>work</h1>
+  <ngb-carousel [wrap]="false" [interval]="11000" *ngIf="experienceSelected">
     <ng-template ngbSlide *ngFor="let development of developmentExperience">
-      <div style="height: 300px; border: 2px solid black">
-        <div class="carousel-caption" style="color: black">
-          <h3>
-            {{ development.title }}
-          </h3>
-          <p>
-            {{ development.year }}
-          </p>
-          <p>
-            {{ development.location }}
-          </p>
-          <p>
-            {{ development.description }}
-          </p>
+      <div
+        style="height: 50vh; border: 2px solid black; text-align: center"
+        class="container"
+      >
+        <div class="row">
+          <div class="col">
+            <h3>
+              {{ development.title }}
+            </h3>
+            <p>
+              <i class="fas fa-school"></i>
+              {{ development.location }}
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <i class="far fa-calendar-alt"></i>
+              {{ development.year }}
+            </p>
+          </div>
         </div>
+        <p>
+          {{ development.description }}
+        </p>
       </div>
     </ng-template>
   </ngb-carousel>

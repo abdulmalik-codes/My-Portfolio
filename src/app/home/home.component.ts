@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
     //  'السَّلَامُ عَلَيْكُمْ'
   ];
   names: string[] = [
-    'Abdul-Malik',
+    "I'm Abdul-Malik",
     // 'عبد الملك'
   ];
   messages: string[] = [
