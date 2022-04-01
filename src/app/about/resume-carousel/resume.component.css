@@ -2,6 +2,10 @@ ngb-carousel {
   margin: 0 0 30px;
 }
 
+.resume-btn {
+  color: #03045e;
+}
+
 .resume-btn:hover {
   color: #48cae4;
 }

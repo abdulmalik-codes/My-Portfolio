@@ -1,3 +1,29 @@
 body {
   height: 100vh;
 }
+
+p {
+  color: #03045e;
+  font-size: 18px;
+}
+p i {
+  color: #00b4d8;
+}
+
+h4 {
+  color: #03045e;
+}
+
+.contact-text {
+  color: #00b4d8;
+}
+
+a i {
+  color: #00b4d8;
+  margin: 5px;
+}
+
+a i:hover {
+  color: #03045e;
+  margin: 5px;
+}

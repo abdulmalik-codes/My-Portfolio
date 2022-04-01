@@ -8,9 +8,14 @@
   <button class="btn">Angular</button>
 </div>
 
-<div class="container">
+<div class="container" *ngIf="projects.length > 0">
   <div class="card-columns">
-    <div class="card" *ngFor="let project of projects" (click)="show()">
+    <div
+      style="background-color: #caf0f8; border: none"
+      class="card"
+      *ngFor="let project of projects"
+      (click)="show()"
+    >
       <img
         class="card-img-top"
         [id]="project.id"
@@ -21,59 +26,62 @@
   </div>
 </div>
 
-<!-- Creates the bootstrap modal where the image will appear -->
-<div *ngFor="let project of projects">
-  <div
-    [style.display]="showModal ? 'block' : 'none'"
-    class="modal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="project.id"
-    aria-hidden="true"
-    [id]="project.id"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" [id]="project.id">
-            {{ project.title }}
+<div *ngIf="projects.length > 0">
+  <div *ngFor="let project of projects">
+    <div
+      [style.display]="showModal ? 'block' : 'none'"
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="project.id"
+      aria-hidden="true"
+      [id]="project.id"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" [id]="project.id">
+              {{ project.title }}
+            </h4>
+          </div>
+          <div class="modal-body">
+            <img
+              [src]="project.imgURL"
+              [alt]="project.imgALT"
+              [id]="project.id"
+              style="width: 425px; height: 425px"
+            />
+          </div>
+
+          <h4>
+            {{ project.techStack }}
           </h4>
-        </div>
-        <div class="modal-body">
-          <img
-            [src]="project.imgURL"
-            [alt]="project.imgALT"
-            [id]="project.id"
-            style="width: 425px; height: 425px"
-          />
-        </div>
 
-        <h4>
-          {{ project.techStack }}
-        </h4>
+          <p>
+            {{ project.description }}
+          </p>
 
-        <p>
-          {{ project.description }}
-        </p>
+          <div class="buttons">
+            <a href="{{ project.githubURL }}" target="_blank"> git </a>
+            <a href="{{ project.liveProjectURL }}" target="_blank"> live </a>
+          </div>
 
-        <div class="buttons">
-          <a href="{{ project.githubURL }}" target="_blank"> git </a>
-          <a href="{{ project.liveProjectURL }}" target="_blank"> live </a>
-        </div>
-
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-default"
-            data-dismiss="modal"
-            (click)="hide()"
-          >
-            Close
-          </button>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default"
+              data-dismiss="modal"
+              (click)="hide()"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Creates the bootstrap modal where the image will appear -->
 
 <portfolio-footer></portfolio-footer>

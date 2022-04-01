@@ -5,14 +5,6 @@ import { Testimonials } from './tesimonials.model';
 export class TestimonialsService {
   private testimonials: Testimonials[] = [
     {
-      img: '../../assets/testimonials/Thapelo.png',
-      imgAlt: 'Picture of Thapelo',
-      name: 'Thapelo Tsotetsi',
-      title: 'Back End Developer/Lecturer',
-      message:
-        'Abdul-Malik is a brilliant student who is always willing to learn more. He has great personality and communication skills. Abdul-Malik also has a skill of being able to learn new tools quickly. I highly recommend him for a Junior Full-stack position.',
-    },
-    {
       img: '../../assets/testimonials/Uthmaan.png',
       imgAlt: 'Picture of Uthmaan',
       name: 'Uthmaan Breda',
@@ -72,6 +64,15 @@ export class TestimonialsService {
       title: 'Back End Developer/Lecturer',
       message:
         'Abdul-Malik is a brilliant student who is always willing to learn more. He has great personality and communication skills. Abdul-Malik also has a skill of being able to learn new tools quickly. I highly recommend him for a Junior Full-stack position.',
+    },
+
+    {
+      img: '../../assets/about/me-about.jpg',
+      imgAlt: 'Picture of Me',
+      name: 'Abdul-Malik Mohamed',
+      title: 'Angular Developer',
+      message:
+        'Go ahead and navigate to my contact page. Call, email or simply type a message to me. Lets grab a coffee!',
     },
   ];
 
