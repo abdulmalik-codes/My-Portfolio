@@ -35,6 +35,14 @@ export class EducationService {
       description:
         'I upskilled myself in coding. Languages included HTML, CSS, JAVASCRIPT and PYTHON.',
     },
+
+    {
+      title: 'Angular Development',
+      year: `2022`,
+      location: `Rain SA`,
+      description:
+        'During my internship at rain I learnt a JavaScript framework called Angular',
+    },
   ];
 
   getEducation() {
@@ -105,6 +113,13 @@ export class WorkService {
       location: `LC Studio`,
       description:
         'After completing my 6 month web development course I started my internship at LC Studio which mainly focused on upskilling myself and transitioning from an education background to a work environment, whilst self promoting and looking for external opportunities.',
+    },
+
+    {
+      title: 'Angular Developer Intern',
+      year: `2022`,
+      location: `Rain SA`,
+      description: 'Small angular projects at the moment',
     },
   ];
 

@@ -6,6 +6,10 @@ body {
   background-color: #caf0f8;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   font-size: 80px;
   color: #03045e;
@@ -24,52 +28,44 @@ h2 span {
   color: #00b4d8;
 }
 
-::-webkit-scrollbar {
+.visually-hidden {
   display: none;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-  /* color: transparent; */
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  color: transparent;
-}
-
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-  color: transparent;
-}
-
 .carousel-indicators {
-  height: 20px;
+  z-index: 20;
 }
+
 .carousel-indicators button {
-  /* height: 20px; */
+  height: 20px;
   border-radius: 50%;
   background-color: #00b4d8;
-  border: none;
-  /* gap: 2px;
-   */
+  border: #00b4d8 solid 1px;
   margin: 2px;
 }
-
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: url();
   background-color: #00b4d8;
   color: #00b4d8;
   border-radius: 50%;
 }
-
-.carousel-control-prev-icon {
-  background-image: url();
-  background-color: #00b4d8;
-  color: #00b4d8;
-  border-radius: 50%;
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 20;
+  color: transparent;
+  width: 50px;
 }
 
-.visually-hidden {
-  display: none;
+.carousel-item {
+  display: flex !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  z-index: -1;
+}
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }

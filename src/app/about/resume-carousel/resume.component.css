@@ -1,46 +1,26 @@
-.resume-btn:hover {
-  color: #48cae4;
-}
-
 ngb-carousel {
   margin: 0 0 30px;
 }
-ngb-carousel button {
-  width: 100%;
-  /* height: 300px; */
-  outline: none;
+
+.resume-btn:hover {
+  color: #48cae4;
 }
 .container {
   padding: 30px;
 }
 
-ngb-carousel {
-  /* width: inherit; */
-  /* height: inherit; */
+h4 {
+  color: #03045e;
 }
-.carousel-inner {
-  overflow: visible;
-}
-.carousel-item {
-  display: flex !important;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1.2s ease-in-out, visibility 1.2s;
-  z-index: -1;
-}
-.carousel-item.active {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
-.carousel-control-prev {
-  z-index: 20;
-  background-color: black;
+h4 i {
+  color: #48cae4;
 }
 
-.carousel-control-next {
-  z-index: 20;
+p {
+  color: #03045e;
+  font-size: 18px;
 }
-.carousel-indicators {
-  z-index: 20;
+
+p i {
+  color: #48cae4;
 }
