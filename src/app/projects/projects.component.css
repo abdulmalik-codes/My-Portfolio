@@ -1,0 +1,12 @@
+/* tooltip */
+:host >>> .tooltip-inner {
+  background: #03045e !important;
+  color: #00b4d8;
+}
+
+.tech-stack-btn {
+  color: #03045e;
+}
+.tech-stack-btn:hover {
+  color: #00b4d8;
+}
