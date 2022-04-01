@@ -25,3 +25,8 @@
 .fas:hover {
   color: #48cae4;
 }
+
+:host >>> .tooltip-inner {
+  background: #03045e !important;
+  color: #00b4d8;
+}

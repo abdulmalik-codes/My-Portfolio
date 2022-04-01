@@ -80,3 +80,10 @@ div .row {
 .devicon-angularjs-plain:hover {
   color: #ba002d;
 }
+
+/* tooltip */
+
+:host >>> .tooltip-inner {
+  background: #03045e !important;
+  color: #00b4d8;
+}

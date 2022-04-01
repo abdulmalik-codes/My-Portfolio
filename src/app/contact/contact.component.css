@@ -52,3 +52,8 @@ a i:hover {
 .email-link:hover {
   color: #00b4d8;
 }
+
+:host >>> .tooltip-inner {
+  background: #03045e !important;
+  color: #00b4d8;
+}

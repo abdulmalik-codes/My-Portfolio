@@ -1,11 +1,30 @@
 <h1>My <span> Projects </span></h1>
 
 <div class="buttons" style="text-align: center">
-  <button class="btn">All</button>
-  <button class="btn" (click)="showHtmlCss()">HTML/CSS</button>
-  <button class="btn" (click)="showPython()">PYTHON</button>
-  <button class="btn" (click)="showJS()">JS</button>
-  <button class="btn">Angular</button>
+  <button class="btn" placement="bottom" ngbTooltip="All">All</button>
+  <button
+    class="btn"
+    (click)="showHtmlCss()"
+    placement="bottom"
+    ngbTooltip="HTML/CSS"
+  >
+    <i class="icon fab fa-html5"> </i>
+    <i class="icon fab fa-css3-alt"></i>
+  </button>
+  <button
+    class="btn"
+    (click)="showPython()"
+    placement="bottom"
+    ngbTooltip="PYTHON"
+  >
+    <i class="icon fab fa-python"> </i>
+  </button>
+  <button class="btn" (click)="showJS()" placement="bottom" ngbTooltip="JS">
+    <i class="icon fab fa-js-square"> </i>
+  </button>
+  <button class="btn" placement="bottom" ngbTooltip="Angular">
+    <i class="icon devicon-angularjs-plain"> </i>
+  </button>
 </div>
 
 <div class="container" *ngIf="projects.length > 0">
