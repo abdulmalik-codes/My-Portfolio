@@ -1,7 +1,3 @@
-body {
-  /* background-color: #caf0f8; */
-}
-
 .card {
   border: none;
   background-color: #caf0f8;
@@ -27,4 +23,60 @@ a {
 
 a:hover {
   background-color: #00b4d8;
+}
+
+div .row {
+  margin: 30px 0;
+}
+
+.tech-stack {
+  text-align: center;
+}
+.icon {
+  color: #00b4d8;
+  font-size: 80px;
+  transition: 0.3s;
+}
+
+/* hover over my skills */
+.fa-html5:hover {
+  color: #e34c26;
+}
+.fa-css3-alt:hover {
+  color: #2965f1;
+}
+.fa-js-square:hover {
+  color: #f0db4f;
+}
+.fa-python:hover {
+  color: #4b8bbe;
+}
+.devicon-sqlite-plain:hover {
+  color: #1c83c4;
+}
+.devicon-mysql-plain:hover {
+  color: #0f536c;
+}
+
+.devicon-postgresql-plain:hover {
+  color: #336791;
+}
+
+.devicon-vuejs-plain:hover {
+  color: #60be86;
+}
+
+.devicon-flask-original:hover {
+  color: #010101;
+}
+
+.devicon-mongodb-plain:hover {
+  color: #4faa41;
+}
+
+.devicon-nodejs-plain:hover {
+  color: #83cd29;
+}
+.devicon-angularjs-plain:hover {
+  color: #ba002d;
 }

@@ -43,6 +43,13 @@ export class EducationService {
       description:
         'During my internship at rain I learnt a JavaScript framework called Angular',
     },
+
+    {
+      title: 'Abdul-Malik Mohamed',
+      year: `2000-present`,
+      location: `End of my Education`,
+      description: 'Click on the suitcase to check out my work experience',
+    },
   ];
 
   getEducation() {
@@ -121,6 +128,13 @@ export class WorkService {
       location: `Rain SA`,
       description: 'Small angular projects at the moment',
     },
+
+    {
+      title: 'Abdul-Malik Mohamed',
+      year: `2000-present`,
+      location: `End of my Work Experience`,
+      description: 'Click on the medal to check out my self development',
+    },
   ];
 
   getWork() {
@@ -161,6 +175,12 @@ export class DevelopmentService {
       location: `Various NPOs`,
       description:
         'I would do community services such as soup kitchens, volunteering to set up for events and serve food at breakfasts, lunches and suppers. I would also help out at youth programs. Different places includes Masjidul-Wadood, AMR Youth, MP Youth, A 2 Z Helping Hands',
+    },
+    {
+      title: 'Abdul-Malik Mohamed',
+      year: `2000-present`,
+      location: `End of my self development section`,
+      description: 'Scroll down to see some of my skills',
     },
   ];
 
