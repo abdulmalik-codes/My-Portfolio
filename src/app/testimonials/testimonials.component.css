@@ -1,0 +1,16 @@
+body {
+  height: 100vh;
+}
+
+h4 {
+  color: #03045e;
+}
+h5 {
+  color: #00b4d8;
+}
+
+p {
+  color: #03045e;
+  font-size: 18px;
+  text-align: center;
+}

@@ -1,29 +1,54 @@
-<div class="container">
-  <h1>My <span> Testimonials </span></h1>
+<body>
+  <div class="container">
+    <h1>My <span> Testimonials </span></h1>
+  </div>
 
-  <ngb-carousel>
-    <ng-template ngbSlide *ngFor="let testimonial of testimonials">
-      <div style="height: 500px; border: 2px solid black">
-        <div class="carousel-caption" style="color: black">
-          <img
-            class="img-responsive"
-            [src]="testimonial.img"
-            [alt]="testimonial.imgAlt"
-          />
+  <div class="container">
+    <div
+      style="border: 2px solid #00b4d8; text-align: center; border-radius: 20px"
+    >
+      <ngb-carousel
+        [wrap]="false"
+        [interval]="3000"
+        [pauseOnHover]="true"
+        [pauseOnFocus]="false"
+      >
+        <ng-template ngbSlide *ngFor="let testimonial of testimonials">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <!-- class="img-responsive" -->
+                <div class="containter">
+                  <img
+                    style="height: 300px; width: 300px"
+                    class="img-fluid rounded-circle"
+                    [src]="testimonial.img"
+                    [alt]="testimonial.imgAlt"
+                  />
 
-          <p>
-            {{ testimonial.name }}
-          </p>
-          <p>
-            {{ testimonial.title }}
-          </p>
+                  <h4>
+                    {{ testimonial.name }}
+                  </h4>
+                  <h5>
+                    {{ testimonial.title }}
+                  </h5>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center" class="col">
+                <div class="container">
+                  <p class="d-flex align-content-center flex-wrap">
+                    {{ testimonial.message }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</body>
 
-          <p>
-            {{ testimonial.message }}
-          </p>
-        </div>
-      </div>
-    </ng-template>
-  </ngb-carousel>
-</div>
-<portfolio-footer></portfolio-footer>
+<portfolio-footer
+  style="position: fixed; bottom: 0; width: 100%"
+></portfolio-footer>
