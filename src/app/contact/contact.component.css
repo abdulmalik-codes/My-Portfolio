@@ -27,3 +27,20 @@ a i:hover {
   color: #03045e;
   margin: 5px;
 }
+
+.contact-btn {
+  color: #03045e;
+  border: #00b4d8 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  /* width: 300px; */
+  text-align: center;
+
+  justify-content: center;
+}
+
+.contact-btn:hover {
+  background-color: #00b4d8;
+}
