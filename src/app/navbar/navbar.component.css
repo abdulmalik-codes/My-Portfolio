@@ -1,9 +1,7 @@
-/* new nav */
 .navbar-toggler {
   font-size: 30px;
   color: #03045e;
   transition: 0.3s;
-  position: fixed;
   top: 85px;
   right: 18px;
 }
@@ -15,19 +13,9 @@
 .navbar-links {
   display: flex;
   flex-direction: column;
-
-  position: absolute;
+  position: fixed;
   top: 120px;
   right: 30px;
-
-  list-style-type: none;
-
-  opacity: 1;
-
-  text-transform: uppercase;
-  gap: 20px;
-
-  transition: all 0.6s linear;
   z-index: 99;
 }
 
