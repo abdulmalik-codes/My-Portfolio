@@ -6,6 +6,8 @@
 
 .tech-stack-btn {
   color: #03045e;
+  transition: 0.3s;
+  font-size: 25px;
 }
 .tech-stack-btn:hover {
   color: #00b4d8;
