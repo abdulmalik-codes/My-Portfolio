@@ -1,9 +1,10 @@
 /* new nav */
 .navbar-toggler {
+  font-size: 30px;
   color: #03045e;
   transition: 0.3s;
   position: fixed;
-  top: 30px;
+  top: 60px;
   right: 18px;
 }
 
@@ -16,7 +17,7 @@
   flex-direction: column;
 
   position: absolute;
-  top: 60px;
+  top: 100px;
   right: 30px;
 
   list-style-type: none;
