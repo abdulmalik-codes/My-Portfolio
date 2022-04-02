@@ -4,7 +4,7 @@
   color: #03045e;
   transition: 0.3s;
   position: fixed;
-  top: 65px;
+  top: 85px;
   right: 18px;
 }
 
@@ -17,7 +17,7 @@
   flex-direction: column;
 
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 30px;
 
   list-style-type: none;
