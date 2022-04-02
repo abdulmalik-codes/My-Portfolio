@@ -1,54 +1,47 @@
-<nav>
-  <ul class="navbar-links">
-    <li routerLinkActive="active">
-      <a routerLink="/home">
-        <i class="fas fa-home" placement="start" ngbTooltip="Home"> </i>
-      </a>
-    </li>
-    <li routerLinkActive="active">
-      <a routerLink="/about">
-        <i class="fas fa-address-card" placement="start" ngbTooltip="About">
-        </i>
-      </a>
-    </li>
-    <li routerLinkActive="active">
-      <a routerLink="/projects">
-        <i class="fas fa-briefcase" placement="start" ngbTooltip="Portfolio">
-        </i>
-      </a>
-    </li>
-    <li routerLinkActive="active">
-      <a routerLink="/testimonials">
-        <i
-          class="fas fa-quote-left"
-          placement="start"
-          ngbTooltip="Testimonials"
-        >
-        </i>
-      </a>
-    </li>
+<nav class="navbar-expand-lg">
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="isMenuCollapsed = !isMenuCollapsed"
+  >
+    &#9776;
+  </button>
+  <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+    <ul class="navbar-links">
+      <li routerLinkActive="active">
+        <a routerLink="/home" (click)="isMenuCollapsed = true">
+          <i class="fas fa-home" placement="start" ngbTooltip="Home"> </i>
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/about" (click)="isMenuCollapsed = true">
+          <i class="fas fa-address-card" placement="start" ngbTooltip="About">
+          </i>
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/projects" (click)="isMenuCollapsed = true">
+          <i class="fas fa-briefcase" placement="start" ngbTooltip="Portfolio">
+          </i>
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/testimonials" (click)="isMenuCollapsed = true">
+          <i
+            class="fas fa-quote-left"
+            placement="start"
+            ngbTooltip="Testimonials"
+          >
+          </i>
+        </a>
+      </li>
 
-    <li routerLinkActive="active">
-      <a routerLink="/contact-me">
-        <i class="fas fa-envelope" placement="start" ngbTooltip="Contact"> </i>
-      </a>
-    </li>
-  </ul>
-</nav>
-
-<!-- <button type="button" placement="start" ngbTooltip="Tooltip on left">
-  Tooltip on left
-</button> -->
-
-<!--
-<ul class="nav navbar-nav navbar-right">
-  <li class="dropdown" appDropdown>
-    <a class="dropdown-toggle" role="button"
-      >Manage <span class="caret"></span
-    ></a>
-    <ul class="dropdown-menu">
-      <li><a style="cursor: pointer">Login</a></li>
+      <li routerLinkActive="active">
+        <a routerLink="/contact-me" (click)="isMenuCollapsed = true">
+          <i class="fas fa-envelope" placement="start" ngbTooltip="Contact">
+          </i>
+        </a>
+      </li>
     </ul>
-  </li>
-</ul>
- -->
+  </div>
+</nav>
