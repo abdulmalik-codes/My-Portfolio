@@ -1,9 +1,22 @@
+/* new nav */
+.navbar-toggler {
+  color: #03045e;
+  transition: 0.3s;
+  position: fixed;
+  top: 30px;
+  right: 18px;
+}
+
+.navbar-toggler:hover {
+  color: #48cae4;
+}
+
 .navbar-links {
   display: flex;
   flex-direction: column;
 
   position: absolute;
-  top: 30px;
+  top: 60px;
   right: 30px;
 
   list-style-type: none;
@@ -29,17 +42,4 @@
 :host >>> .tooltip-inner {
   background: #03045e !important;
   color: #00b4d8;
-}
-
-/* new nav */
-.navbar-toggler {
-  color: #03045e;
-  transition: 0.3s;
-  position: fixed;
-  top: 5px;
-  right: 18px;
-}
-
-.navbar-toggler:hover {
-  color: #48cae4;
 }

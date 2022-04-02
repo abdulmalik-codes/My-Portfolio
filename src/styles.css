@@ -33,7 +33,7 @@ h2 span {
 }
 
 .carousel-indicators {
-  z-index: 20;
+  /* z-index: 20; */
 }
 
 .carousel-indicators button {
