@@ -64,16 +64,7 @@
     >
       <!-- [id]="project.id" -->
       <div class="modal-dialog">
-        <div
-          class="modal-content"
-          *ngFor="let project of projects"
-          style="scroll-behavior: smooth"
-        >
-          <div>
-            <h4 [id]="project.id">
-              {{ project.title }}
-            </h4>
-          </div>
+        <div class="modal-content" *ngFor="let project of projects">
           <div class="modal-body">
             <img
               [src]="project.imgURL"
@@ -82,10 +73,13 @@
               style="height: 300px; width: 300px"
             />
           </div>
-
-          <h4>
-            {{ project.techStack }}
+          <h4 [id]="project.id">
+            {{ project.title }}
           </h4>
+
+          <h5>
+            {{ project.techStack }}
+          </h5>
 
           <p>
             {{ project.description }}
